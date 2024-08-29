@@ -49,3 +49,12 @@ coverage/
 
 # npm debug logs
 npm-debug.log*
+
+# License
+LICENSE
+
+# Readme
+README.md
+
+# 
+.vscode/
