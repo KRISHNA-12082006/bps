@@ -10,11 +10,6 @@ media/
 staticfiles/
 .env
 
-# React
-node_modules/
-build/
-*.log
-
 # macOS
 .DS_Store
 
@@ -25,3 +20,32 @@ Desktop.ini
 # Python virtual environments
 venv/
 env/
+venv1/
+
+# Node modules
+node_modules/
+
+# Build files
+build/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Other
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Coverage reports
+coverage/
+
+# npm debug logs
+npm-debug.log*
