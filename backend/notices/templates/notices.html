@@ -11,22 +11,34 @@
 <body>
     <main>
 
-        <header class="h-20 flex items-center justify-between px-5  fixed w-full backdrop-blur-sm z-10 bg-black/50">
+        <header class="h-20 flex items-center justify-between px-5  fixed w-full backdrop-blur-sm z-10 bg-black">
             <div>
                 <img src="" alt="sj;dokad">
             </div>
-            <div class=" space-x-8  hidden md:block font-bold  text-white lg:text-2xl" >
-                <a  href="#">Events</a>
-                <a  href="#">Teachers</a>
-                
-                <a  href="#">Student </a>
-                <a  href="#">Branches</a>
-                <button class="text-4xl  text-white ">☰</button>
-            </div>
-            
-            
+            <div class="flex items-center gap-5">
+                <div class=" space-x-8  hidden md:block font-bold  text-white lg:text-3xl" >
+                    <a  href="#">Events</a>
+                    <a  href="#">Teachers</a>
+                    
+                    <a  href="#">Student </a>
+                    <a  href="#">Branches</a>
+                    
+                </div>
+                <button class="text-4xl text-white ">☰</button>
+            </div>   
         </header>
-        <img class="h-screen w-screen" src="./img1.jpg" alt="">
+        <img class="h-screen w-screen fixed object-cover  -z-10" src="./img1.jpg" alt="">
+        <div class="h-screen w-screen bg-[rgb(0,0,0,0.4)]/50 backdrop-blur-[2px] ">
+
+            <div class="flex md:flex-col w-screen justify-between px-1 md:justify-normal h-32 md:w-[23%] md:h-screen bg-red-500">
+                <h1 class="text-xl translate-x-2 translate-y-[90px] font-bold md:translate-y-28 md:translate-x-4 text-white  md:text-6xl ">NOTICES</h1>
+                <h1 class="hidden md:block translate-x-2 translate-y-24 font-bold md:translate-y-32 md:translate-x-4 text-white  md:text-2xl ">General Notice</h1>
+                <h1 class="md:hidden  translate-y-[90px] font-bold md:translate-y-32 md:translate-x-4 text-white  md:text-2xl ">Notices Categories ☰</h1>
+            
+            </div>
+
+
+        </div>
             
         
     </main>
