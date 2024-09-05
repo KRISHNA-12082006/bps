@@ -41,16 +41,18 @@
                 <h1 class="lg:hidden  translate-y-[90px] font-bold lg:translate-y-32 lg:translate-x-4 text-white  lg:text-2xl ">Notices Categories ☰</h1>
             
             </div>
-
             <div class="lg:flex lg:h-3/4 lg:w-4/6 h-[65vh] mt-10 ml-[10%] mr-[10%] w-[80%] lg:ml-[7%] lg:rounded-xl lg:mr-[7%] lg:mt-36 bg-white">
+                {% for img in notices %} 
                 <div class="h-full lg:w-[60%] w-full flex items-center justify-center">
                     <div class=" h-[90%] w-[90%] bg-gray-200">
 
                         <!-- notice img -->
+                        <img src="{{ img.image.url}}"> 
 
 
                     </div>
                 </div>
+                {% endfor %}
                 <div class="h-14 w-full bg-white flex    border-t-2 border-black  gap-2 pl-4  items-center lg:hidden">
 
                         <i class="ri-heart-line"></i>
