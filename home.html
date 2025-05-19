@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boisar Public School</title>
+  <link rel="stylesheet" href="home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Boisar Public School">
+    <meta property="og:description" content="Welcome to Boisar Public School. Discover our mission, core values, and educational goals.">
+    <meta property="og:image" content="assets/images/vision.jpg">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="main-navbar">
+    <div class="brand">
+        <img src="assets/logo.png" alt="BPS" height="40px" width="40px">
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="academics/academics.html">ACADEMICS</a></li>
+      <li><a href="admissions/admissions.html">ADMISSIONS</a></li>
+      <li><a href="gallery/gallery.html">GALLERY</a></li>
+      <li><a href="contact/contact.html">CONTACT US</a></li>
+      <li><a href="about/about.html">ABOUT US</a></li>
+    </ul>
+    <button class="hamburger">&#9776;</button>
+  </nav>
+
+
+<!-- MISSION & VISION SECTION -->
+<section class="mission-vision">
+  <div class="mv-left">
+    <h2 class="floating">Welcome to Boisar Public School</h2>
+    <p>[Insert paragraph about the school’s mission, core values, and educational goals]</p>
+  </div>
+  <div class="mv-right floating">
+    <img src="assets/images/vision.jpg" alt="Mission and Vision">
+  </div>
+</section>
+
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section scroll-animate">
+    <div class="hero-left">
+      <img src="assets/images/school.jpg" alt="School Campus">
+    </div>
+    <div class="hero-right">
+      <form id="hero-contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <button type="submit">Enquire Now</button>
+    </form>
+</div>
+</section>
+
+  <!-- UPCOMING EVENTS SECTION -->
+  <section id="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <div class="events-container">
+      <!-- Event cards will be injected here by JS -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <ul>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    <p>© 2025 Boisar Public School. All rights reserved.</p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>

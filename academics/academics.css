@@ -1,0 +1,100 @@
+/* Import home styles for consistency */
+@import url('../home.css');
+
+/* Academics-specific overrides */
+.academics-hero {
+  text-align: center;
+  padding: 60px 20px 30px 20px;
+  background: linear-gradient(135deg, #181818, #232323);
+}
+
+.curriculum-section, .schedule-section, .registration-section, .admission-steps {
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.curriculum-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.curriculum-card {
+  background: #232323;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00fff733;
+  padding: 24px;
+  min-width: 220px;
+  max-width: 260px;
+  color: #fff;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #232323;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.schedule-table th, .schedule-table td {
+  padding: 14px;
+  border-bottom: 1px solid #333;
+  color: #fff;
+}
+
+.schedule-table th {
+  background: #00fff7;
+  color: #121212;
+}
+
+.registration-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.registration-section input, 
+.registration-section select {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.registration-section button {
+  padding: 12px;
+  background: #ff26a8;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.registration-section button:hover {
+  background: #00fff7;
+  color: #121212;
+}
+
+.admission-steps ol {
+  margin: 20px auto 0 auto;
+  max-width: 500px;
+  color: #fff;
+  font-size: 1.1rem;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .curriculum-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

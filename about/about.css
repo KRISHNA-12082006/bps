@@ -1,0 +1,81 @@
+/* Import home styles for consistency */
+@import url('../home.css');
+
+/* Timeline Section */
+.about-timeline {
+  padding: 60px 40px;
+  background: #181818;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.about-timeline h2 {
+  color: #00fff7;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #232323;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00fff733;
+  max-width: 500px;
+  width: 100%;
+}
+
+.timeline-item .year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff26a8;
+  min-width: 80px;
+}
+
+.timeline-item .desc {
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Milestones Section */
+.milestones {
+  padding: 40px 40px 60px 40px;
+  background: #222;
+  text-align: center;
+}
+
+.milestones h3 {
+  color: #ff26a8;
+  margin-bottom: 24px;
+}
+
+.milestones ul {
+  list-style: disc;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: left;
+  padding-left: 24px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .about-timeline, .milestones {
+    padding: 30px 10px;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 12px;
+  }
+}
