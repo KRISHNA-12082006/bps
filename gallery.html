@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Gallery | Boisar Public School</title>
-  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="gallery/gallery.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta property="og:title" content="Boisar Public School">
     <meta property="og:description" content="Welcome to Boisar Public School. Discover our mission, core values, and educational goals.">
+    <link rel="icon" href="assets/logo.png" type="image/png">
     <meta property="og:image" content="assets/images/vision.jpg">
 
 </head>
@@ -14,15 +15,14 @@
   <!-- NAVBAR -->
   <nav id="main-navbar">
     <div class="brand">
-      <img src="../assets/logo.png" alt="BPS" height="40px" width="40px">
+      <img src="assets/logo.png" alt="BPS" height="40px" width="40px">
     </div>
     <ul class="nav-links">
       <li><a href="/bps">HOME</a></li>
-      <li><a href="../academics/academics.html">ACADEMICS</a></li>
-      <li><a href="../admissions/admissions.html">ADMISSIONS</a></li>
-      <li><a href="gallery.html">GALLERY</a></li>
-      <li><a href="../contact/contact.html">CONTACT US</a></li>
-      <li><a href="../about/about.html">ABOUT US</a></li>
+      <li><a href="academics.html">ACADEMICS</a></li>
+      <li><a>GALLERY</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
     </ul>
     <button class="hamburger">&#9776;</button>
   </nav>
@@ -30,7 +30,7 @@
   <!-- GALLERY FILTER -->
   <section class="gallery-filter scroll-animate">
     <h2 class="floating">Gallery</h2>
-    <select id="event-filter">
+    <select id="event-filter" title="Filter">
       <option value="all">All Events</option>
       <option value="annual">Annual Day</option>
       <option value="sports">Sports</option>
@@ -61,13 +61,12 @@
   <!-- FOOTER -->
   <footer id="site-footer">
     <ul>
-      <li><a href="../academics/academics.html">Academics</a></li>
-      <li><a href="../admissions/admissions.html">Admissions</a></li>
+      <li><a href="academics.html">Academics</a></li>
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
     <p>© 2025 Boisar Public School. All rights reserved.</p>
   </footer>
 
-  <script src="gallery.js"></script>
+  <script src="gallery/gallery.js"></script>
 </body>
 </html>

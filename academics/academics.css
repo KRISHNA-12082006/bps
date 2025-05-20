@@ -1,19 +1,23 @@
 /* Import home styles for consistency */
 @import url('../home.css');
 
-/* Academics-specific overrides */
+/* === ACADEMICS HERO SECTION === */
 .academics-hero {
   text-align: center;
   padding: 60px 20px 30px 20px;
   background: linear-gradient(135deg, #181818, #232323);
+  color: #00fff7;
+  font-size: 2rem;
 }
 
+/* === COMMON SECTION WRAPPER === */
 .curriculum-section, .schedule-section, .registration-section, .admission-steps {
   padding: 40px 20px;
   margin: 0 auto;
   max-width: 1000px;
 }
 
+/* === CURRICULUM CARDS === */
 .curriculum-grid {
   display: flex;
   flex-wrap: wrap;
@@ -25,17 +29,25 @@
 .curriculum-card {
   background: #232323;
   border-radius: 12px;
-  box-shadow: 0 0 10px #00fff733;
+  box-shadow: 0 0 12px rgba(0, 255, 247, 0.2);
   padding: 24px;
   min-width: 220px;
   max-width: 260px;
   color: #fff;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.curriculum-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #00fff7aa;
+}
+
+/* === SCHEDULE TABLE === */
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 24px;
   background: #232323;
   border-radius: 10px;
   overflow: hidden;
@@ -44,57 +56,85 @@
 .schedule-table th, .schedule-table td {
   padding: 14px;
   border-bottom: 1px solid #333;
-  color: #fff;
+  color: #f1f1f1;
+  text-align: center;
 }
 
 .schedule-table th {
   background: #00fff7;
   color: #121212;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
+/* === REGISTRATION FORM === */
 .registration-section form {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 350px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
-.registration-section input, 
+.registration-section input,
 .registration-section select {
-  padding: 12px;
-  border-radius: 8px;
+  padding: 12px 14px;
+  border-radius: 10px;
   border: none;
-  background: #2a2a2a;
+  background: rgba(255, 255, 255, 0.08);
   color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.registration-section input:focus,
+.registration-section select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00fff7aa;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .registration-section button {
-  padding: 12px;
-  background: #ff26a8;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff26a8, #ff5db1);
   color: #fff;
   font-weight: bold;
   border: none;
-  border-radius: 8px;
-  transition: 0.3s;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 38, 168, 0.3);
 }
 
 .registration-section button:hover {
-  background: #00fff7;
+  background: linear-gradient(135deg, #00fff7, #00ffd5);
   color: #121212;
 }
 
+/* === ADMISSION STEPS === */
 .admission-steps ol {
-  margin: 20px auto 0 auto;
+  margin: 30px auto 0 auto;
   max-width: 500px;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.1rem;
   padding-left: 20px;
+  line-height: 1.8;
 }
 
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .curriculum-grid {
     flex-direction: column;
     align-items: center;
+  }
+
+  .academics-hero {
+    font-size: 1.6rem;
+    padding: 40px 15px 20px;
+  }
+
+  .registration-section form {
+    width: 100%;
+    padding: 0 10px;
   }
 }
