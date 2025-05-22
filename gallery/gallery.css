@@ -5,7 +5,7 @@
 .gallery-filter {
   padding: 40px 20px 10px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364, 0.8);
 }
 
 .gallery-filter h2 {
@@ -26,6 +26,12 @@
   transition: all 0.3s ease-in-out;
 }
 
+#event-filter option {
+  background-color: rgba(4, 4, 43, 0.8); /* 30% opacity */
+  color: #fff; /* optional: ensures contrast */
+}
+}
+
 #event-filter:hover {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -33,7 +39,7 @@
 /* === GALLERY GRID === */
 .gallery-section {
   padding: 30px 20px 60px 20px;
-  background: #101010;
+  background: rgba(16, 16, 16, 0.5);
 }
 
 .gallery-grid {

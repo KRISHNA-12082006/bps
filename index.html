@@ -12,6 +12,12 @@
     <meta property="og:image" content="assets/images/vision.jpg">
 </head>
 <body>
+  <div id="video-overlay">
+  <video autoplay muted loop playsinline id="background-video" poster="assets/fallback.jpeg">
+  <source src="assets/background_vid.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
   <!-- NAVBAR -->
   <nav id="main-navbar">
     <div class="brand">
@@ -57,7 +63,7 @@
 
   <!-- UPCOMING EVENTS SECTION -->
   <section id="upcoming-events">
-    <h2>Upcoming Events</h2>
+    <h2 class="floating">Upcoming Events</h2>
     <div class="events-container">
       <div class="event-card">
         <h3>Annual Sports Day</h3>
@@ -81,7 +87,6 @@
   <footer id="site-footer">
     <ul>
       <li><a href="academics.html">Academics</a></li>
-      <li><a href="admissions.html">Admissions</a></li>
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
     <p>© 2025 Boisar Public School. All rights reserved.</p>

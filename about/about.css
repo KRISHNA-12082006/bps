@@ -5,7 +5,7 @@
 /* === FOUNDERS SECTION === */
 .founders-section {
   padding: 60px 20px 40px;
-  background: #222;
+background: rgba(17, 17, 17, 0.5); /* 50% opacity */
   text-align: center;
 }
 
@@ -76,7 +76,7 @@
 /* === TIMELINE SECTION === */
 .about-timeline {
   padding: 60px 40px;
-  background: #181818;
+background: rgba(17, 17, 17, 0.5); /* 50% opacity */
   text-align: center;
   min-height: 60vh;
 }
@@ -157,7 +157,7 @@
 /* === MILESTONES SECTION === */
 .milestones {
   padding: 40px 40px 60px;
-  background: #222;
+background: rgba(17, 17, 17, 0.5); /* 50% opacity */
   text-align: center;
 }
 

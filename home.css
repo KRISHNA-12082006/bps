@@ -10,17 +10,33 @@ body {
   background-color: #0a0a0a;
   color: #f2f2f2;
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
-a {
-  color: #00e0ff;
-  text-decoration: none;
-  transition: all 0.3s ease;
+/* === BACKGROUND VIDEO === */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1; /* Adjust for desired darkness */
+  pointer-events: none;
 }
 
-a:hover {
-  color: #ff4ecb;
+#video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent dark layer */
+  z-index: -1;
 }
+
 
 /* === NAVBAR === */
 #main-navbar {
@@ -55,9 +71,12 @@ a:hover {
   padding: 8px 12px;
   border-radius: 8px;
   transition: 0.3s;
+  text-decoration: none;
+  color: cyan;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover,
+.nav-links li a.active {
   background-color: rgba(255, 78, 203, 0.15);
   color: #ffffff;
 }
@@ -84,6 +103,7 @@ a:hover {
     padding: 15px 0;
     text-align: center;
     z-index: 99;
+    text-decoration: none;
   }
 
   .nav-links.active {
@@ -100,7 +120,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 60px 40px;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hero-left img {
@@ -155,7 +175,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 60px 40px;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .mv-left {
@@ -184,14 +204,14 @@ a:hover {
 /* === UPCOMING EVENTS === */
 #upcoming-events {
   padding: 60px 40px;
-  background: #101010;
+  background-color: rgba(16, 16, 16, 0.4);
   text-align: center;
 }
 
 #upcoming-events h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #ff4ecb;
+  color: #fa4ac5;
 }
 
 .events-container {
@@ -218,7 +238,7 @@ a:hover {
 
 /* === FOOTER === */
 #site-footer {
-  background: #131313;
+  background-color: rgba(19, 19, 19, 0.9);
   padding: 30px;
   text-align: center;
   color: #aaa;

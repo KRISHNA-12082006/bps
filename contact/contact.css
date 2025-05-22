@@ -4,7 +4,7 @@
 /* === CONTACT INFO SECTION === */
 .contact-info {
   padding: 60px 40px 30px 40px;
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+background: rgba(17, 17, 17, 0.5); /* 50% opacity */
   text-align: center;
 }
 
@@ -60,7 +60,7 @@
 /* === CONTACT FORM SECTION === */
 .contact-form-section {
   padding: 50px 20px 70px 20px;
-  background: #111;
+background: rgba(17, 17, 17, 0.5); /* 50% opacity */
   text-align: center;
 }
 
